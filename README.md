@@ -1,6 +1,8 @@
 examples from:
 https://www.youtube.com/watch?v=8Aw45HN5lnA&ab_channel=TheOrganicChemistryTutor
 
+https://www.youtube.com/watch?v=eyknGvncKLw&t=43s&ab_channel=DrNic%27sMathsandStats
+
 null hypothesis H0: population from city is tall 168
 alternative hypothesis H1: population is tall not 168
 

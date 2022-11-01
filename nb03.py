@@ -1,30 +1,25 @@
 from scipy import stats
 import math
 '''
-H0: population is 169.5 cm tall on average
-H1: population is 168 cm tall on average
+H0: 70gr of peanuts per 200 gr of chocolate
+HA: < 70gr of peanuts per 200 gr of chocolate
 '''
 #number of observations
-n = 36
+n = 30
 
 #mean
-X_pop = 169.5
-X_obs = 168
+X_pop = 70
+X_obs = 68.7
 
-#sample stdev
-s = 3.9
-#confidence value
-c = 0.95
-#significance value
-alpha = 1 - c
+#sample STDEV
+s = 5
+alpha = 0.02 #significance, confidance c = 1 - alpha
 
-n_sided = 2 # 2-sided test
+n_sided = 2
 AL = 1-alpha/n_sided
 z_crit = stats.norm.ppf(AL)
-print(z_crit) # 1.959963984540054
 
-z_value = ( X_pop - X_obs ) / (s / math.sqrt(n))
-# critical to alpha
+z_value = ( X_obs - X_pop ) / (s / math.sqrt(n))
 p_value = stats.norm.sf(z_value) * n_sided
 
 print('critical z   =', z_crit)
